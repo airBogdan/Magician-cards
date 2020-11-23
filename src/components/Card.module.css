@@ -1,0 +1,21 @@
+
+.card {
+    width:  calc((100% - (12px * 13)) / 13);
+    height: calc(((100vw - 200px - (12px * 13)) / 13) * 1.5);
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.card p:nth-child(2) {
+    text-align: center;
+}
+.card p:last-child {
+    text-align: right;
+}

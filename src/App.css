@@ -1,38 +1,56 @@
 .App {
-  text-align: center;
+    padding: 50px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-container {
+    margin: 0 25px 50px 0;
+    display: flex;
+}
+.card-container:last-child {
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.drawn-cards, .deck-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 25px 50px 0;
+    width: 100%;
+}
+.cards:last-child {
+    margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+button.reset {
+    margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+    margin: 0;
+}
+
+button {
+    background-color: #1950ff;
+    border-radius: 20px;
+    box-shadow: 0 2.1px 1.3px rgba(0, 0, 0, 0.044), 0 5.9px 4.2px rgba(0, 0, 0, 0.054), 0 12.6px 9.5px rgba(0, 0, 0, 0.061), 0 25px 20px rgba(0, 0, 0, 0.1);
+    /*height: 80px;*/
+    padding: 10px 20px;
+    /*width: 80px;*/
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+button:hover {
+    background-color: #446ef3;
+    cursor: pointer;
+}
+button:focus, button:active, button:focus-within {
+    outline: none;
 }
